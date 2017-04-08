@@ -1,0 +1,77 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 23, 2012 at 11:59 AM
+-- Server version: 5.1.44
+-- PHP Version: 5.3.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `hslanj_manager`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `site_member_types`
+--
+
+CREATE TABLE `site_member_types` (
+  `member_type_id` int(11) NOT NULL AUTO_INCREMENT,
+  `member_type` varchar(50) DEFAULT NULL,
+  `member_dues` decimal(19,4) DEFAULT NULL,
+  PRIMARY KEY (`member_type_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `site_member_types`
+--
+
+INSERT INTO `site_member_types` VALUES(1, 'Institutional Member', 110.0000);
+INSERT INTO `site_member_types` VALUES(2, 'Personal Member', 30.0000);
+INSERT INTO `site_member_types` VALUES(3, 'Retired Member', 10.0000);
+INSERT INTO `site_member_types` VALUES(4, 'Student Member', 10.0000);
+INSERT INTO `site_member_types` VALUES(5, 'Honorary Member', 0.0000);
+INSERT INTO `site_member_types` VALUES(6, 'Non-Member', 0.0000);
+INSERT INTO `site_member_types` VALUES(7, 'Support Staff/Non-Member', 0.0000);
+INSERT INTO `site_member_types` VALUES(8, 'Institutional Member/Personal Member', 140.0000);
+INSERT INTO `site_member_types` VALUES(9, 'Affiliate Member', 40.0000);
+
+-- phpMyAdmin SQL Dump
+-- version 3.2.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Feb 23, 2012 at 12:14 PM
+-- Server version: 5.1.44
+-- PHP Version: 5.3.2
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `hslanj_manager`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `site_membership_tally`
+--
+
+DROP TABLE IF EXISTS `site_membership_tally`;
+CREATE TABLE `site_membership_tally` (
+  `membership_tally_id` int(11) NOT NULL AUTO_INCREMENT,
+  `member_id` int(11) NOT NULL,
+  `member_type_id` int(11) NOT NULL,
+  `membership_year` varchar(4) NOT NULL,
+  `membership_dues_paid` decimal(19,4) NOT NULL,
+  PRIMARY KEY (`membership_tally_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `site_membership_tally`
+--
+

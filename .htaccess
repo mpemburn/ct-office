@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|css|js|test|documents|data|import|robots\.txt)
+RewriteRule ^(.*)$ ./index.php/$1 [L]
+php_value memory_limit 1024M

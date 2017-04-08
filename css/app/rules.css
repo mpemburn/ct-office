@@ -1,0 +1,92 @@
+tr:hover {
+	background-color: #fffa64;
+	cursor: pointer;
+}
+
+td {
+	font-size: 10pt;
+	text-align: center;
+	border-bottom: 1px solid gray;
+}
+
+#container {
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 50%;
+	width: 85%;
+}
+
+#resource_heading, #form_container, #rules_container {
+	text-align: left;
+	white-space: nowrap;
+}
+
+#rules_container, #form_container, #list_container {
+	float: left;
+	width: 100%;
+	//border: 1px dotted gray;
+}
+
+#resource_heading {
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+#list_container {
+	width: 75%;
+}
+
+#years_container {
+	float: right;
+	font-size: 10pt;
+	padding-right: 12%;
+	vertical-align: middle;
+	white-space: nowrap;
+	width: 10%;
+	//border: 1px dotted gray;
+}
+
+#prev_subcat, #subcategory_list, #next_subcat {
+	display: none;
+}
+
+#vspace {
+	min-height: 50px;
+}
+
+#wait {
+	vertical-align: middle;
+	display: none;	
+}
+
+.arrow {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.wide {
+	width: 190px;
+}
+
+.dollar {
+	width: 80px;
+	text-align: right;
+}
+
+.number, .year {
+	width: 40px;
+	text-align: right;
+}
+
+.save_button {
+}
+
+.infinite_button {
+	font-size: 8px;
+	margin-right: 2px;
+	text-align: center;
+	vertical-align: center;
+	width: 22px;
+}
+
+//*** END OF FILE rules_css.php

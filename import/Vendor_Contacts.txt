@@ -1,0 +1,14 @@
+vendor_name	contact_name	contact_address_1	contact_city	contact_state	contact_zip	contact_phone_1	contact_phone_2	contact_fax	contact_email_address
+Ovid	Elizabeth Hern	"333 Seventh Ave, 20th Fl"	New York	NY	10001-5004	(646) 436-6232		(646) 674-6307	elizabeth.hern@wolterskluwer.com
+Ovid	Timothy Herlihy	706 Red Maple Dr	West Chester	PA	19380-5920	(800) 343-0064 ext 4839	(484) 266-0804	(610) 952-9130	timothy.herlihy@wolterskluwer.com
+Ovid	Kevin Iarossi	725 Perthshire Pl	Abingson	MD	21009-2673	(410) 829-5876			kevin.iarossi@wolterskluwer.com
+EBSCO	Parker Livermore	10 Estes St	Ipswich	MA	01938-2106	(800) 653-2726 ext 2706	(978) 412-5610	(978) 356-6565	plivermore@epnet.com
+EBSCO	Rob Swenson	10 Estes St	Ipswich	MA	01938-2106	(800) 653-2726 ext 2779		(978) 356-6565	rswenson@ebscohost.com
+EBSCO	Erin McDonough	10 Estes St	Ipswich	M	01938-2106	(617) 269-5511	(617) 686-8510	(978) 356-6565	emcdonagh@ebscohost.com
+EBSCO	Deborah Lee Vese	322 S Arch St	Allentown	PA	18103-2804	(610) 740-3881	(610) 730-0880	(610) 740-3670	deborahlee@ebscohost.com
+EBSCO	Erika Rendeiro	10 Estes St	Ipswich	m	01938-2106	(800) 653-2726 ext 2033	(646) 584-0573	(978) 356-6565	erendeiro@ebscohost.com
+BMJ	Phil White	73 Alice St	North Dartmouth	MA	02747-1915	(508) 567-3481	(508) 942-4340	(508) 567-5872	pwhite@bmjgroup.com
+NEJM	Dan Boutchie	860 Winter St Su 1	Waltham	MA	02451-1411	(781) 434-7266	(508) 843-7590	(781) 464-4818	dboutchie@nejm.org
+MGH	Matthew Rovery	"1221 Avenue of the Americas, 46th Fl"	New York	NY	10020-1001	(212) 904-5567	(646) 673-4361		matthew_rovery@mcgraw-hill.com
+STAT!Ref	Nikole Riley	PO Box 4798	Jackson	WY	83001-4798	(800) 901-5494 ext 252	(810) 441-4832	(307) 222-0272	nriley@statref.com
+STAT!Ref	Gary Christopher	PO Box 4798	Jackson	WY	83001-4798	(800) 901-5494 ext 251	(609) 760-1244	(301) 222-0272	gchristopher@statref.com

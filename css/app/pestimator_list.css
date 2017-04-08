@@ -1,0 +1,18 @@
+/* 
+    Document   : stub
+    Created on : Nov 27, 2012, 10:24:17 AM
+    Author     : mpemburn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ul {
+	display: block;
+	list-style-type: disc;
+	padding-left: 10px;
+	margin-left: 10px;
+	text-align: left;
+}
+
+
+/*** End of File /css/app/pestimator_list.css ***/

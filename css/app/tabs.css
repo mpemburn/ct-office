@@ -1,0 +1,22 @@
+/* initially all tabs are hidden */ 
+ul.tabs {
+	display: none;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+.tab_frame, .panes, .pane {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 95%;
+}
+
+.static {
+	min-height: 750px;
+}
+
+.pane {
+	width: 99%;
+}

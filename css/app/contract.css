@@ -1,0 +1,166 @@
+body {
+	position: relative;
+	font: bold 1.2em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+input.dateField {
+	text-align: center;
+}
+
+input.large {
+	font-size: 1.0em;
+	width: 97%;
+	height: 2.0em;
+	border: 1px solid gray;
+	margin-bottom: 5px;
+}
+
+checkbox.serviceCheck {
+}
+
+input.textField,
+input.dateField, 
+input.dateText, 
+input.dollarText,
+input.dollarUnderscore,
+input.numericText,
+input.phoneText,
+input.staticNumber,
+input.zipText,
+select.selectField,
+textarea.contractTextarea {
+	border: none;
+	font-size: 0.8em;
+	font-weight: normal;
+	background-color: transparent;
+	padding-left: 0.6em;
+	padding-top: 0.2em;
+	vertical-align: bottom;
+}
+
+textarea.extensibleText {
+	border: 1px dotted gray;
+	font-size: 0.8em;
+}
+
+div.plusButton {
+	width: 24px;
+	height: 24px;
+	background: url(../../images/plus.png) center center no-repeat;	
+}
+
+checkbox.serviceCheck {
+	background-color: transparent;
+}
+
+input.checkLabel {
+	background-color: transparent;
+}
+
+input.dollarText, input.zipText {
+	text-align: right;
+}
+
+input.dollarUnderscore {
+	text-align: right;
+	background: url(../../images/2_px_black_dot.png) bottom left repeat-x;	
+}
+
+input.phoneText {
+	text-align: left;
+}
+
+input.numericText {
+	text-align: right;
+}
+
+input.staticNumber {
+	padding-top: 0px;
+	font-size: 0.8em;
+	vertical-align: top;
+	width: 15px;
+}
+
+#field {
+	display: none;
+}
+
+#sig_pad {
+	display: none;
+	background-color: white;
+	padding: 10px;
+	width: 100%;
+}
+
+#no_really {
+	vertical-align: baseline;
+	visibility: hidden;
+}
+
+#loading {
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#close_x {
+	float: right;
+}
+
+#error {
+	color: red;
+}
+
+#buttons {
+	vertical-align: top;
+}
+
+button {
+	float: right;
+	font-size: 1.0em;
+	padding: 0.6em 0.6em 0.7em;
+	background-color: #1f3564;
+	border: 0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+}
+
+button.clearButton {
+	font-size: 0.8em;
+	padding: 0.4em 0.8em;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+button:hover {
+	background-color: gray;
+}
+
+.errorMsg {
+	font-size: 0.5em;
+	color: red;
+	visibility: hidden;
+}
+
+.label {
+	text-align: left;
+	padding-top: 6px;
+	width: 100%;
+}
+
+.sigWrapper {
+	border: 1px solid gray;
+}
+
+.ui-loader {
+	display: none;
+}
+

@@ -1,0 +1,97 @@
+/**
+ * jQuery.popover example stylesheet.
+ * By Davey IJzermans
+ * http://daveyyzermans.nl
+ * 
+ * License: public domain
+ */
+
+.popover {
+	position: absolute;
+	top: 0px; left: 0;
+	max-height: 240px;
+	width: 450px;
+	display: none;
+}
+.popover.wider {
+	width: 340px;
+}
+.popover.large {
+	width: 470px;
+	max-height: 350px;
+}
+
+.popover .arrow, .popover .top-arrow {
+	position: absolute;
+	top: -30px; 
+	left: 45%;
+	border-color: transparent transparent #6a7282 transparent;
+	border-style: solid;
+	border-width: 15px;
+	height: 0;
+	width: 0;
+	z-index: 2;
+}
+.popover .bottom-arrow {
+	top: 100%; left: 50%;
+	margin: 0 0 0 -3px;
+	border-top: 5px solid #121212;
+	border-bottom: 5px solid transparent;
+}
+.popover .left-arrow {
+	top: 50%; left: -10px;
+	margin: -3px 0 0;
+	border-right: 5px solid #121212;
+	border-bottom: 5px solid transparent;
+}
+.popover .right-arrow {
+	top: 50%; left: 100%;
+	margin: -3px 0 0;
+	border-left: 5px solid #121212;
+	border-bottom: 5px solid transparent;
+}
+.popover .wrap {
+	background: white;
+	border: 3px solid #6a7282;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: 0px 5px 30px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 30px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 5px 30px rgba(50, 50, 50, 0.75);
+}
+.popover .title {
+	background: #121212 url(popover_gradient.png) repeat-x;
+	color: white;
+	font-size: 1.3em;
+	text-align: center;
+	padding: 8px 0 0 0;
+	height: 27px;
+}
+.popover .content {
+	/*padding: 15px;*/
+	max-height: 175px;
+	overflow: auto;
+	line-height: 1.3em;
+	font-size: 0.9em;
+}
+.popover.large .content {
+	max-height: 285px;
+}
+
+.popover .content a {
+	text-decoration: none;
+}
+.popover .content ul li {
+	color: black;
+	font-size: 1.8em;
+	font-weight: bold;
+	padding: 16px 12px;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.popover .content ul li:hover {
+	color: white;
+	background: #0272ed url(popover_highlight.png) repeat-x;
+}
+

@@ -1,0 +1,163 @@
+
+#member_form {
+	display: block;
+}
+
+#contact_parse, #membership_add {
+	display: none;
+	background: url(../../images/clear_x.png);
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-color: white;
+	border: 1px solid #E0E0E0;
+	padding: 5px;
+	padding-left: 10px;
+	padding-top: 12px;
+	width: 375px;
+	height: 30px;
+	margin-left: 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px #111;
+	-moz-box-shadow: 3px 3px 10px #111;
+	-webkit-box-shadow: 3px 3px 10px #111;
+	white-space: nowrap; 
+	z-index: 2;
+}
+
+#membership_add {
+	width: 410px;
+	height: 70px;
+}
+
+#control_strip {
+	vertical-align: center;
+	text-align: right;
+}
+
+#button_edit_save {
+	vertical-align: top;
+}
+
+input {
+	vertical-align: top;
+}
+
+input.long_text {
+	width: 300px;
+	vertical-align: top;
+}
+
+input.extra_long_text {
+	width: 375px;
+	vertical-align: top;
+}
+
+input.zip_plus {
+	width: 100px;
+	vertical-align: top;
+}
+
+select.wide, select.medium, select.narrow {
+	border: 1px solid #E0E0E0;
+}
+
+select.wide, input.wide {
+	width: 300px;
+}
+
+select.medium, input.medium {
+	width: 100px;
+}
+
+select.narrow, input.small {
+	width: 60px;
+}
+
+select.narrow, input.narrow {
+	width: 40px;
+}
+
+table.membership {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	width: 320px;
+}
+
+th.right, td.right {
+	text-align: right;
+}
+
+td.edit, td.delete {
+	cursor: pointer;
+	width: 20px;
+}
+
+td.edit {
+	background: url(theme/images/edit.png) center center no-repeat;	
+}
+
+td.delete {
+	background: url(theme/images/delete.png) center center no-repeat;	
+}
+
+textarea.note_area, textarea.ip_area {
+	font-family: Courier, fixed;
+	font-size: 10pt;
+	width: 320px;
+	height: 150px;
+}
+
+textarea.ip_area {
+	width: 250px;
+	height: 100px;
+}
+
+.lil_button {
+	background: #fff;
+	cursor: pointer;
+	height: 20px;
+	width: 4.5em;
+	vertical-align: baseline;
+	border: 1px solid #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.lil_button:hover {
+	background: #E0E0E0;	
+}
+
+.form_label {
+	font-size: 0.7em;
+	font-weight: bold;
+	text-align: right; 
+	vertical-align: middle;
+	padding-top: 0.5em;
+}
+
+.form_field, .csz_field { 
+	vertical-align: middle;
+	white-space:nowrap;
+}
+
+.ui-autocomplete-input {
+	height: 20px;
+	margin: 0; 
+	padding: 1; 
+}
+
+div.ui-datepicker{
+	font-size: 0.6em;
+}
+
+.auto_input {
+	font-size: 8pt;
+}
+
+.auto_list {
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+}

@@ -1,0 +1,640 @@
+html, body, iframe {
+	background-color: white;
+	font-family: Arial, sans-serif;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 1.0em;
+	font-weight: bold;
+}
+
+ins { 
+	color: blue; text-decoration: none; 
+}
+
+del { 
+	color: red; 
+}
+
+th {
+	background-color: #e3f1fa;
+	color: #458cb7;
+	font-family: Verdana, sans-serif;
+	font-size: 8pt;
+	padding: 5px;
+	text-align: left;
+	border-top: 1px solid #458cb7;
+	border-bottom: 1px solid #458cb7;
+}
+
+th:hover {
+	background-color: #c5e5fa;
+}
+
+td.data {
+	font-size: 10pt;
+	text-align: left;
+	border-bottom: 1px solid gray;
+}
+
+table tr.data_row:hover {
+	background-color: #fffa64;
+	cursor: pointer;
+}
+
+input[type=text] {
+	font-size: 10pt;
+	border: 1px solid #E0E0E0;
+	outline: none;
+}
+
+input[type=text]:hover {
+	background-color: #f4f6fa;
+	color: blue;
+}
+
+input:focus {
+	color: blue;
+}
+
+td {
+	padding: 0.25em;
+}
+
+#header_panel, #footer_panel, #nav_panel {
+	color: black;
+	background: #deedf7 url(theme/images/ui-bg_highlight-hard_100_deedf7_1x100.png) 50% 50% repeat-x;	
+}
+
+#header_panel {
+	min-height: 40px;
+	padding-top: 10px;
+}
+
+#header_panel h1 {
+	margin-left: 30px;
+}
+
+#nav_panel {
+	float: left;
+	border-top: 2px solid #458cb7;
+	border-bottom: 2px solid #458cb7;
+}
+
+#nav_panel ul {
+	margin: 4px;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+}
+
+#nav_panel ul li {
+	display: inline; 
+}
+
+#nav_panel ul li a {
+	font-size: 0.8em;
+	text-decoration: none;
+	padding: 0.4em 1em;
+	color: #458cb7;
+}
+
+#nav_panel ul li a:hover {
+	color: #fff;
+	background: #17344a url(theme/images/ui-bg_glass_100_17344a_1x400.png) 50% 50% repeat-x;
+}
+
+div #logged_in {
+	position: relative;
+	left: -30px;
+	font-size: 0.8em;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: normal;
+	padding-top: 0.5em;
+	padding-right: 5px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+#footer_panel {
+	color: #458cb7;
+	bottom: 0px;
+	border-top: 2px solid #458cb7;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 2px 15px 2px 15px; 
+	position: fixed;
+}
+
+#title {
+	clear: both;
+	font-size: 16pt;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 100%;	
+}
+
+#found {
+	float: right;
+	font-size: 10pt;
+	padding-left: 3px;
+	vertical-align: baseline;
+}
+
+#contract_links {
+	display: none;
+}
+
+#width_test {
+	position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+}
+
+button.big, button.medium {
+	font-size: 2.0em;
+	margin: 1em 0 0 0;
+	padding: 0.6em 0.6em 0.7em;
+	background-color: #1f3564;
+	border: 0;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+}
+
+button.medium {
+	font-size: 1.0em;
+	padding: 0.6em 0.6em 0.7em;
+}
+
+input.large {
+	font-size: 1.0em;
+	width: 97%;
+	height: 2.0em;
+	border: 1px solid gray;
+	margin-bottom: 5px;
+}
+
+.normal {
+	font-size: 0.7em;
+}
+
+.head_face {
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+}
+
+.highlight {
+	color: blue;
+	font-weight: bold;
+}
+
+.input-prompt {
+  position: absolute;
+  font-size: 10pt;
+  color: #aaa;
+  margin: 0.4em 0 0 0.8em;
+}
+
+.circle {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #43e83b;
+	border: 1px solid gray;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.delete, .undo {
+	cursor: pointer;
+}
+
+.undo {
+	display: none;
+}
+
+/*** Stuff used in list tables */
+
+.accordion {
+	display: none;
+}
+
+.accordion td {
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 0px;
+	width: 100%
+}
+
+.log_field {
+	float: left;
+	background-color: white;
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 5px;
+	width: 98%
+}
+
+.log_delta, .log_change_from, .log_change_to {
+	float: left;
+	font-family: Courier, fixed;
+	font-weight: normal;
+	font-size: 10pt;
+	padding: 5px;
+}
+
+.log_delta {
+	width: 95%
+}
+
+.log_change_from {
+	width: 48%;
+}
+
+.log_change_to {
+	float: right;
+	width: 48%;
+}
+
+.show_delta {
+	color: blue;
+	cursor: pointer;
+}
+
+img.expander {
+	cursor: pointer;
+}
+
+input.search {
+	height: 20px;
+	font-size: 0.8em;
+	margin-bottom: 3px;
+	padding-left: 8px;
+	width: 170px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+div.control_left {
+	float: left;
+}
+
+div.control_right {
+	float: right;
+}
+
+div.clear_search {
+	cursor: pointer;
+	position: relative;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	background: url(../../images/clear_x.png) top left no-repeat;
+}
+
+div.dotted {
+	border: 1px dotted gray;
+}
+
+div.top {
+	vertical-align: top;
+}
+
+div.middle {
+	vertical-align: middle;
+}
+
+div.bottom {
+	vertical-align: bottom;
+}
+
+div.left {
+	text-align: left;
+}
+
+div.center {
+	text-align: center;
+}
+
+div.right {
+	text-align: right;
+}
+
+div.pad_left_5 {
+	padding-left: 5px;
+}
+
+div.pad_left_10 {
+	padding-left: 10px;
+}
+
+div.pad_left_20 {
+	padding-left: 20px;
+}
+
+div.pad_left_25 {
+	padding-left: 25px;
+}
+
+div.pad_left_30 {
+	padding-left: 30px;
+}
+
+div.pad_left_40 {
+	padding-left: 40px;
+}
+
+div.pad_left_50 {
+	padding-left: 50px;
+}
+
+div.pad_left_60 {
+	padding-left: 60px;
+}
+
+div.pad_left_70 {
+	padding-left: 70px;
+}
+
+div.pad_left_75 {
+	padding-left: 75px;
+}
+
+div.pad_right_5 {
+	padding-right: 5px;
+}
+
+div.pad_right_10 {
+	padding-right: 10px;
+}
+
+div.pad_right_20 {
+	padding-right: 20px;
+}
+
+div.pad_right_25 {
+	padding-right: 25px;
+}
+
+div.pad_right_30 {
+	padding-right: 30px;
+}
+
+div.pad_right_40 {
+	padding-right: 40px;
+}
+
+div.pad_right_50 {
+	padding-right: 50px;
+}
+
+div.pad_right_60 {
+	padding-right: 60px;
+}
+
+div.pad_right_70 {
+	padding-right: 70px;
+}
+
+div.pad_right_75 {
+	padding-right: 75px;
+}
+
+div.pad_top_5 {
+	padding-top: 5px;
+}
+
+div.pad_top_10 {
+	padding-top: 10px;
+}
+
+div.pad_top_20 {
+	padding-top: 20px;
+}
+
+div.pad_top_25 {
+	padding-top: 25px;
+}
+
+div.pad_top_30 {
+	padding-top: 30px;
+}
+
+div.pad_top_40 {
+	padding-top: 40px;
+}
+
+div.pad_top_50 {
+	padding-top: 50px;
+}
+
+div.pad_top_60 {
+	padding-top: 60px;
+}
+
+div.pad_top_70 {
+	padding-top: 70px;
+}
+
+div.pad_top_75 {
+	padding-top: 75px;
+}
+
+div.pad_bottom_5 {
+	padding-bottom: 5px;
+}
+
+div.pad_bottom_10 {
+	padding-bottom: 10px;
+}
+
+div.pad_bottom_20 {
+	padding-bottom: 20px;
+}
+
+div.pad_bottom_25 {
+	padding-bottom: 25px;
+}
+
+div.pad_bottom_30 {
+	padding-bottom: 30px;
+}
+
+div.pad_bottom_40 {
+	padding-bottom: 40px;
+}
+
+div.pad_bottom_50 {
+	padding-bottom: 50px;
+}
+
+div.pad_bottom_60 {
+	padding-bottom: 60px;
+}
+
+div.pad_bottom_70 {
+	padding-bottom: 70px;
+}
+
+div.pad_bottom_75 {
+	padding-bottom: 75px;
+}
+
+.spinny {
+	padding-right: 20px;
+}
+
+.found {
+	float: right;
+	text-align: right;
+	font-size: 0.8em;
+	padding-top: 0.6em;
+	padding-bottom: 0;
+	height: 1.6em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.normal {
+	font-size: 0.7em;
+}
+
+.head_face {
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+}
+
+.highlight {
+	color: blue;
+	font-weight: bold;
+}
+
+.input_prompt {
+  position: absolute;
+  font-size: 10pt;
+  color: #aaa;
+  margin: 0.4em 0 0 0.8em;
+  z-index: 1;
+}
+
+.circle {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #43e83b;
+	border: 1px solid gray;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.delete, .undo {
+	cursor: pointer;
+}
+
+.size_10pt {
+	font-size: 10pt;
+}
+
+.size_11pt {
+	font-size: 11pt;
+}
+
+.size_12pt {
+	font-size: 12pt;
+}
+
+.size_14t {
+	font-size: 14pt;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.blue {
+	color: blue;
+}
+
+.undo {
+	display: none;
+}
+
+/*** Stuff used in list tables */
+
+.accordion {
+	display: none;
+}
+
+.accordion tr {
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	padding: 0px;
+	width: 100%
+}
+
+.log_field {
+	float: left;
+	background-color: white;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	width: 98%
+}
+
+.log_delta, .log_change_from, .log_change_to {
+	float: left;
+	font-family: Courier, fixed;
+	font-weight: normal;
+	font-size: 10pt;
+	text-align: left;
+	padding: 5px;
+}
+
+.log_delta {
+	width: 95%
+}
+
+.log_change_from {
+	width: 48%;
+}
+
+.log_change_to {
+	float: right;
+	width: 48%;
+}
+
+.show_delta {
+	color: blue;
+	cursor: pointer;
+}
+
+.foo {
+	color: red;
+}
+
